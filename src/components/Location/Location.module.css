@@ -1,0 +1,135 @@
+.locationSection {
+  padding: 6rem 0;
+  background-color: var(--light-bg);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: #64748b;
+  font-size: 1.125rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.infoCard {
+  background: white;
+  padding: 3rem;
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.infoBlock {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.icon {
+  font-size: 2rem;
+  background: rgba(249, 115, 22, 0.1);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  flex-shrink: 0;
+}
+
+.infoText h4 {
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.infoText p {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.link {
+  color: var(--primary-color);
+  font-weight: 600;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.link:hover {
+  transform: translateX(5px);
+}
+
+.hours {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.hours strong {
+  color: var(--text-dark);
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialBtn {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: transform 0.3s ease;
+}
+
+.socialBtn:hover {
+  transform: scale(1.05);
+}
+
+.mapCard {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+  height: 100%;
+}
+
+@media (max-width: 992px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+  .hours {
+    grid-template-columns: 1fr;
+  }
+  .mapCard {
+    min-height: 400px;
+  }
+}

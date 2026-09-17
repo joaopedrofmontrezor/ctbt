@@ -1,0 +1,80 @@
+.footer {
+  background: #0f172a;
+  color: white;
+  padding: 4rem 0 2rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+.brand .logoText {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.brand .logoTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  line-height: 1;
+}
+
+.brand .logoSubtitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.brand .desc {
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.navCol h5 {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.navCol ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.navCol a {
+  color: #94a3b8;
+  transition: color 0.3s ease;
+}
+
+.navCol a:hover {
+  color: var(--primary-color);
+}
+
+.navCol p {
+  color: #94a3b8;
+  margin-bottom: 0.75rem;
+}
+
+.bottom {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  text-align: center;
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
