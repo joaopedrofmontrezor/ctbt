@@ -35,11 +35,7 @@ export default function Location() {
                     Seg a Sex: 09h às 22h<br/>
                     Sáb e Dom: 07h às 19h
                   </div>
-                  <div>
-                    <strong>🍹 CTBT Bar:</strong><br/>
-                    Seg a Sex: 17h às 22h<br/>
-                    Sáb e Dom: 11h às 21h
-                  </div>
+                  
                 </div>
               </div>
             </div>

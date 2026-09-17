@@ -24,7 +24,7 @@ export default function Gastronomy() {
           <div className={styles.featuresGrid}>
             <div className={styles.featureCard}>
               <div className={styles.icon}>🍹</div>
-              <h4>Drinks Autorais</h4>
+              <h4>Drinks</h4>
               <p>Coquetelaria artesanal com frutas selecionadas e caipirinhas exclusivas.</p>
             </div>
             <div className={styles.featureCard}>
@@ -34,13 +34,13 @@ export default function Gastronomy() {
             </div>
             <div className={styles.featureCard}>
               <div className={styles.icon}>🍔</div>
-              <h4>Porções Gourmet</h4>
-              <p>Cardápio variado de porções gourmet, iscas, batata frita e muito mais.</p>
+              <h4>Porções </h4>
+              <p>Cardápio variado de porções, petiscos e muito mais.</p>
             </div>
             <div className={styles.featureCard}>
               <div className={styles.icon}>🌴</div>
-              <h4>Lounge Pé na Areia</h4>
-              <p>Mesas e lounges com sombreiros e o clima descontraído da praia.</p>
+              <h4>Ambiente</h4>
+              <p>Ambiente agradável para relaxar e curtir o dia.</p>
             </div>
           </div>
         </div>

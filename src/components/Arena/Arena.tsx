@@ -8,7 +8,7 @@ export default function Arena() {
           <span className={styles.tag}>CTBT BEACH TENNIS</span>
           <h2 className={styles.title}>A Arena & Esportes de Areia</h2>
           <p className={styles.subtitle}>
-            Evolua no esporte, jogue com amigos e sinta a energia da areia de alta qualidade com infraestrutura completa e iluminação profissional.
+            Evolua no esporte, jogue com amigos e sinta a energia da areia de alta qualidade com infraestrutura completa.
           </p>
         </div>
 
@@ -16,10 +16,10 @@ export default function Arena() {
           <div className={styles.infoBox}>
             <div className={styles.sportItem}>
               <h3 className={styles.sportTitle}>Beach Tennis</h3>
-              <p>O esporte que é a cara do verão! Reúna seus amigos para partidas dinâmicas e divertidas em quadras com estrutura completa.</p>
+              <p>O esporte que é a cara do verão! Reúna seus amigos para partidas dinâmicas e divertidas.</p>
               <ul className={styles.checklist}>
-                <li>Locação avulsa por hora</li>
                 <li>Aulas para todos os níveis</li>
+                <li>Locação avulsa por hora</li>
                 <li>Day Use para curtir o dia todo</li>
                 <li>Torneios emocionantes</li>
               </ul>

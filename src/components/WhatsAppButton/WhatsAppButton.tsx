@@ -28,7 +28,7 @@ export default function WhatsAppButton() {
             <div className={styles.options}>
               <a href="https://wa.me/5516997168587?text=Gostaria%20de%20agendar%20uma%20aula%20experimental" target="_blank" rel="noreferrer">🎾 Agendar Aula Experimental</a>
               <a href="https://wa.me/5516997168587?text=Gostaria%20de%20reservar%20uma%20quadra" target="_blank" rel="noreferrer">⏳ Reservar Quadra</a>
-              <a href="https://wa.me/5516997168587?text=Queria%20fazer%20uma%20reserva%20no%20bar" target="_blank" rel="noreferrer">🍹 Reserva no Bar</a>
+              {/* <a href="https://wa.me/5516997168587?text=Queria%20fazer%20uma%20reserva%20no%20bar" target="_blank" rel="noreferrer">🍹 Reserva no Bar</a> */}
             </div>
           </div>
         </div>

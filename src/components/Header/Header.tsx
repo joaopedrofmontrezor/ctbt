@@ -18,7 +18,7 @@ export default function Header() {
         <a href="#inicio" className={styles.logo}>
           <div className={styles.logoText}>
             <span className={styles.logoTitle}>CTBT</span>
-            <span className={styles.logoSubtitle}>ARENA & BAR</span>
+            
           </div>
         </a>
 

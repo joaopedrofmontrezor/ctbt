@@ -12,11 +12,11 @@ export default function Hero() {
           </div>
           
           <h1 className={styles.title}>
-            Sua Experiência <span className={styles.highlight}>Pé na Areia</span> em Matão
+            Sua Experiência <span className={styles.highlight}> na Areia</span> em Matão
           </h1>
           
           <p className={styles.subtitle}>
-            O ponto de encontro perfeito que une esportes de areia, o espaço gastronômico CTBT Bar, bebidas trincando e os melhores eventos da cidade.
+            O ponto de encontro perfeito que une esporte, o espaço gastronômico, bebidas geladas e os melhores torneios da cidade.
           </p>
           
           <div className={styles.ctaGroup}>
@@ -30,13 +30,13 @@ export default function Hero() {
           
           <div className={styles.stats}>
             <div className={styles.statItem}>
-              <span className={styles.statNum}>4</span>
+              <span className={styles.statNum}>6</span>
               <span className={styles.statLabel}>Quadras</span>
             </div>
-            <div className={styles.statItem}>
-              <span className={styles.statNum}>3</span>
+            {/* <div className={styles.statItem}>
+              <span className={styles.statNum}></span>
               <span className={styles.statLabel}>Esportes</span>
-            </div>
+            </div> */}
             <div className={styles.statItem}>
               <span className={styles.statNum}>100%</span>
               <span className={styles.statLabel}>Vibe</span>

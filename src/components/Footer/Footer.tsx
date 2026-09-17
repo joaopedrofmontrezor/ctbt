@@ -8,10 +8,10 @@ export default function Footer() {
           <div className={styles.brand}>
             <div className={styles.logoText}>
               <span className={styles.logoTitle}>CTBT</span>
-              <span className={styles.logoSubtitle}>ARENA & BAR</span>
+              <span className={styles.logoSubtitle}></span>
             </div>
             <p className={styles.desc}>
-              Seu complexo esportivo e gastronômico pé na areia em Matão - SP. Aulas, locações de quadras e os melhores sunsets.
+              Seu complexo esportivo e gastronômico em Matão - SP. Aulas, locações de quadras e os melhores momentos.
             </p>
           </div>
 
@@ -34,7 +34,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.bottom}>
-          <p>&copy; {new Date().getFullYear()} CTBT Arena Beach Tennis. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} CTBT - Centro de Treinamento de Beach Tennis. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

@@ -8,11 +8,11 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "CTBT | Arena Beach Tennis & Bar em Matão, SP",
+  title: "CTBT | Centro de Treinamento de Beach Tennis",
   description: "A melhor arena de Beach Tennis de Matão. Quadras profissionais, aulas, locações e um bar pé na areia incrível.",
   keywords: ["Beach Tennis", "Matão", "CTBT", "Arena de Areia", "Bar", "Gastronomia", "Esportes"],
   openGraph: {
-    title: "CTBT | Arena Beach Tennis & Bar",
+    title: "CTBT | Centro de Treinamento de Beach Tennis",
     description: "Sua experiência pé na areia em Matão! Quadras, aulas e gastronomia artesanal.",
     type: "website",
     locale: "pt_BR",
