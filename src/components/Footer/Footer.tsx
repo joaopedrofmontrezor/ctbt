@@ -1,4 +1,4 @@
-import styles from './Footer.module.css';
+import styles from "./Footer.module.css";
 
 export default function Footer() {
   return (
@@ -11,30 +11,64 @@ export default function Footer() {
               <span className={styles.logoSubtitle}></span>
             </div>
             <p className={styles.desc}>
-              Seu complexo esportivo e gastronômico em Matão - SP. Aulas, locações de quadras e os melhores momentos.
+              Seu complexo esportivo e gastronômico em Matão - SP. Aulas,
+              locações de quadras e os melhores momentos.
             </p>
           </div>
 
           <div className={styles.navCol}>
             <h5>Navegação</h5>
             <ul>
-              <li><a href="#inicio">Início</a></li>
-              <li><a href="#arena">A Arena & Esportes</a></li>
-              <li><a href="#professores">Nossos Professores</a></li>
-              <li><a href="#bar">Bar & Gastronomia</a></li>
-              <li><a href="#localizacao">Localização</a></li>
+              <li>
+                <a href="#inicio">Início</a>
+              </li>
+              <li>
+                <a href="#arena">A Arena & Esportes</a>
+              </li>
+              <li>
+                <a href="#professores">Nossos Professores</a>
+              </li>
+              <li>
+                <a href="#depoimentos">Depoimentos</a>
+              </li>
+              <li>
+                <a href="#bar">Bar & Gastronomia</a>
+              </li>
+              <li>
+                <a href="#localizacao">Localização</a>
+              </li>
             </ul>
           </div>
 
           <div className={styles.navCol}>
             <h5>Contato</h5>
             <p>Av. Antônio Gorgatti, 1807 - Matão/SP</p>
-            <p>Atendimento via WhatsApp</p>
+            <p>
+              <a
+                href="https://wa.me/5516997168587"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Atendimento via WhatsApp
+              </a>
+            </p>
+            <p>
+              <a
+                href="https://instagram.com/ctbtoficial"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Instagram
+              </a>
+            </p>
           </div>
         </div>
 
         <div className={styles.bottom}>
-          <p>&copy; {new Date().getFullYear()} CTBT - Centro de Treinamento de Beach Tennis. Todos os direitos reservados.</p>
+          <p>
+            &copy; {new Date().getFullYear()} CTBT - Centro de Treinamento de
+            Beach Tennis. Todos os direitos reservados.
+          </p>
         </div>
       </div>
     </footer>

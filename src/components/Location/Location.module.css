@@ -38,7 +38,7 @@
   background: white;
   padding: 3rem;
   border-radius: 24px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
@@ -96,13 +96,98 @@
   color: var(--text-dark);
 }
 
+.faqWrap {
+  margin-top: 4rem;
+}
+
+.titleSmall {
+  font-size: 2rem;
+  color: var(--text-dark);
+  margin-top: 0.5rem;
+}
+
+.faqList {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.faqItem {
+  background: white;
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+  border: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+.faqItem strong {
+  display: block;
+  color: var(--text-dark);
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.faqItem p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.ctaPanel {
+  margin-top: 3rem;
+  background: linear-gradient(
+    135deg,
+    rgba(249, 115, 22, 0.12),
+    rgba(2, 132, 199, 0.12)
+  );
+  border: 1px solid rgba(249, 115, 22, 0.15);
+  border-radius: 24px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.ctaActions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.secondaryCta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(15, 23, 42, 0.14);
+  background: white;
+  color: var(--text-dark);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.secondaryCta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
+}
+
 .socials {
   display: flex;
   gap: 1rem;
 }
 
 .socialBtn {
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 999px;
@@ -118,7 +203,7 @@
 .mapCard {
   border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
   height: 100%;
 }
 
