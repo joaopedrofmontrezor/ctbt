@@ -160,7 +160,7 @@ Acesse [http://localhost:3000](http://localhost:3000) no seu navegador.
 
 Projeto concebido, desenvolvido e entregue por:
 
-**João Pedro Montrezor**  
+**João Pedro Ferreira Montrezor**  
 
 
 - **GitHub:** [@joaopedrofmontrezor](https://github.com/joaopedrofmontrezor)
