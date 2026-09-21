@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./Arena.module.css";
 
 export default function Arena() {
@@ -50,20 +51,21 @@ export default function Arena() {
 
             <a
               href="https://wa.me/5516997168587"
-              className="btn-primary"
+              className={`btn-primary ${styles.reserveBtn}`}
               target="_blank"
               rel="noreferrer"
-              style={{ marginTop: "1rem", alignSelf: "flex-start" }}
             >
               Reservar Quadra ou Aula
             </a>
           </div>
 
           <div className={styles.imageBox}>
-            <img
+            <Image
               src="/images/arena.png"
-              alt="Arena CTBT Beach Tennis"
+              alt="Arena CTBT Beach Tennis em Matão"
               className={styles.image}
+              width={800}
+              height={550}
             />
             <div className={`glass-panel ${styles.overlayCard}`}>
               <strong>Aulas & Locação</strong>

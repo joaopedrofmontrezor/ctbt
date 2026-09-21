@@ -1,25 +1,36 @@
 .footer {
   background: #0f172a;
   color: white;
-  padding: 4rem 0 2rem;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: clamp(3rem, 6vw, 4.5rem) 0 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  gap: 4rem;
-  margin-bottom: 3rem;
+  gap: clamp(2rem, 4vw, 4rem);
+  margin-bottom: clamp(2rem, 4vw, 3rem);
 }
 
 .brand .logoText {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.25rem;
+}
+
+.brand .logoImage {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
 }
 
 .brand .logoTitle {
-  font-size: 2rem;
+  font-size: clamp(1.75rem, 4vw, 2rem);
   font-weight: 800;
   color: var(--primary-color);
   line-height: 1;
@@ -35,12 +46,15 @@
 .brand .desc {
   color: #94a3b8;
   line-height: 1.6;
+  max-width: 380px;
+  font-size: clamp(0.875rem, 2vw, 0.95rem);
 }
 
 .navCol h5 {
-  font-size: 1.125rem;
-  margin-bottom: 1.5rem;
+  font-size: clamp(1.05rem, 2.5vw, 1.125rem);
+  margin-bottom: 1.25rem;
   color: white;
+  font-weight: 700;
 }
 
 .navCol ul {
@@ -53,6 +67,9 @@
 .navCol a {
   color: #94a3b8;
   transition: color 0.3s ease;
+  display: inline-block;
+  font-size: clamp(0.875rem, 2vw, 0.95rem);
+  padding: 0.2rem 0;
 }
 
 .navCol a:hover {
@@ -62,19 +79,35 @@
 .navCol p {
   color: #94a3b8;
   margin-bottom: 0.75rem;
+  font-size: clamp(0.875rem, 2vw, 0.95rem);
+  line-height: 1.5;
 }
 
 .bottom {
   padding-top: 2rem;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
   color: #64748b;
-  font-size: 0.875rem;
+  font-size: clamp(0.8rem, 1.8vw, 0.875rem);
+  line-height: 1.5;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.5rem;
+  }
+  .brand {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 640px) {
   .grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  .brand {
+    grid-column: span 1;
   }
 }

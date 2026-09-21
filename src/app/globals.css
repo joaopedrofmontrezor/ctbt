@@ -17,6 +17,9 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -24,6 +27,15 @@ body {
   color: var(--text-dark);
   font-family: var(--font-outfit), sans-serif;
   overflow-x: hidden;
+  width: 100%;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 ::selection {
@@ -63,12 +75,12 @@ button {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
-/* Container Utility */
+/* Container Utility - Responsivo e fluido */
 .container {
-  max-width: 1200px;
-  width: min(1200px, calc(100% - 2rem));
+  max-width: 1240px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 clamp(1rem, 3.5vw, 2rem);
 }
 
 /* Animations */
@@ -115,6 +127,9 @@ button {
   justify-content: center;
   gap: 0.5rem;
   box-shadow: 0 14px 24px -14px rgba(249, 115, 22, 0.85);
+  min-height: 44px;
+  white-space: nowrap;
+  font-size: 1rem;
 }
 
 .btn-primary:hover {
@@ -126,3 +141,15 @@ button {
   transform: translateY(-2px);
   box-shadow: 0 18px 28px -18px rgba(249, 115, 22, 0.9);
 }
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+  .btn-primary {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.9rem;
+  }
+}
+

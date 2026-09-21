@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -7,8 +8,17 @@ export default function Footer() {
         <div className={styles.grid}>
           <div className={styles.brand}>
             <div className={styles.logoText}>
-              <span className={styles.logoTitle}>CTBT</span>
-              <span className={styles.logoSubtitle}></span>
+              <Image
+                src="/images/logo.png"
+                alt="Logo CTBT"
+                width={48}
+                height={48}
+                className={styles.logoImage}
+              />
+              <div>
+                <span className={styles.logoTitle}>CTBT</span>
+                <span className={styles.logoSubtitle}>Beach Tennis</span>
+              </div>
             </div>
             <p className={styles.desc}>
               Seu complexo esportivo e gastronômico em Matão - SP. Aulas,
@@ -24,6 +34,9 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#arena">A Arena & Esportes</a>
+              </li>
+              <li>
+                <a href="#planos">Planos & Aulas</a>
               </li>
               <li>
                 <a href="#professores">Nossos Professores</a>

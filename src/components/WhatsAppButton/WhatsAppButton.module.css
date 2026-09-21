@@ -1,31 +1,35 @@
 .wrapper {
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  z-index: 1000;
+  bottom: clamp(1.25rem, 3vw, 2rem);
+  right: clamp(1.25rem, 3vw, 2rem);
+  z-index: 990;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 1rem;
+  gap: 0.85rem;
 }
 
 .btn {
-  width: 60px;
-  height: 60px;
-  background-color: #25D366;
+  width: clamp(54px, 8vw, 60px);
+  height: clamp(54px, 8vw, 60px);
+  background-color: #25d366;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
   position: relative;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   border: none;
   cursor: pointer;
 }
 
 .btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
+}
+
+.btn:active {
+  transform: scale(0.95);
 }
 
 .ping {
@@ -34,31 +38,40 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #25D366;
+  background-color: #25d366;
   border-radius: 50%;
   z-index: -1;
   animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 @keyframes ping {
-  75%, 100% {
-    transform: scale(1.5);
+  75%,
+  100% {
+    transform: scale(1.4);
     opacity: 0;
   }
 }
 
 .popover {
   background: white;
-  border-radius: 16px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-  width: 300px;
+  border-radius: 18px;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.16);
+  width: min(320px, calc(100vw - 2.5rem));
+  max-width: calc(100vw - 2.5rem);
   overflow: hidden;
-  animation: slideUp 0.3s ease;
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(15, 23, 42, 0.08);
 }
 
 @keyframes slideUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .popoverHeader {
@@ -67,7 +80,7 @@
   padding: 1rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
   position: relative;
 }
 
@@ -81,6 +94,7 @@
   justify-content: center;
   font-weight: 800;
   font-size: 0.8rem;
+  flex-shrink: 0;
 }
 
 .info {
@@ -92,34 +106,55 @@
   font-size: 0.9rem;
 }
 
+.info small {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+
 .onlineDot {
   display: inline-block;
-  width: 8px;
-  height: 8px;
-  background: #25D366;
+  width: 7px;
+  height: 7px;
+  background: #25d366;
   border-radius: 50%;
-  margin-right: 0.25rem;
+  margin-right: 0.35rem;
 }
 
 .closeBtn {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: transparent;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   border: none;
   cursor: pointer;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.closeBtn:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .popoverBody {
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
 
 .popoverBody p {
   color: var(--text-dark);
   font-weight: 500;
   margin-bottom: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 .options {
@@ -130,15 +165,17 @@
 
 .options a {
   background: #f1f5f9;
-  padding: 0.75rem 1rem;
-  border-radius: 8px;
+  padding: 0.75rem 0.9rem;
+  border-radius: 10px;
   color: var(--text-dark);
   font-weight: 600;
-  font-size: 0.875rem;
-  transition: background 0.2s ease;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  line-height: 1.3;
 }
 
 .options a:hover {
   background: #e2e8f0;
   color: var(--primary-color);
+  transform: translateX(3px);
 }

@@ -1,11 +1,11 @@
 .arenaSection {
-  padding: 6rem 0;
+  padding: clamp(3.5rem, 7vw, 6rem) 0;
   background-color: var(--light-bg);
 }
 
 .header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: clamp(2rem, 5vw, 4rem);
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -17,82 +17,60 @@
   font-weight: 700;
   color: var(--primary-color);
   letter-spacing: 1px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: clamp(1.85rem, 4.5vw, 2.5rem);
   color: var(--text-dark);
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
 }
 
 .subtitle {
   color: #64748b;
-  font-size: 1.125rem;
+  font-size: clamp(0.95rem, 2vw, 1.125rem);
   line-height: 1.6;
 }
 
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: clamp(2rem, 4vw, 4rem);
   align-items: center;
 }
 
 .infoBox {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: clamp(1.25rem, 2.5vw, 2rem);
 }
 
 .sportItem {
   background: white;
-  padding: 2rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
   transition: transform 0.3s ease;
+  border: 1px solid rgba(15, 23, 42, 0.04);
 }
 
 .sportItem:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-}
-
-.featureList {
-  display: grid;
-  gap: 1rem;
-}
-
-.featureItem {
-  background: rgba(2, 132, 199, 0.05);
-  border: 1px solid rgba(2, 132, 199, 0.08);
-  border-radius: 16px;
-  padding: 1rem 1.25rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-}
-
-.featureItem strong {
-  color: var(--text-dark);
-  font-size: 1rem;
-}
-
-.featureItem span {
-  color: #64748b;
-  line-height: 1.5;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
 }
 
 .sportTitle {
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
   color: var(--secondary-color);
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .sportItem p {
   color: #64748b;
   line-height: 1.6;
   margin-bottom: 1rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
 .checklist {
@@ -107,6 +85,7 @@
   padding-left: 1.5rem;
   color: var(--text-dark);
   font-weight: 500;
+  font-size: clamp(0.875rem, 2vw, 0.95rem);
 }
 
 .checklist li::before {
@@ -117,51 +96,95 @@
   font-weight: bold;
 }
 
+.featureList {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.featureItem {
+  background: rgba(2, 132, 199, 0.05);
+  border: 1px solid rgba(2, 132, 199, 0.1);
+  border-radius: 16px;
+  padding: clamp(0.85rem, 2vw, 1.25rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.featureItem strong {
+  color: var(--text-dark);
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.featureItem span {
+  color: #64748b;
+  line-height: 1.5;
+  font-size: clamp(0.825rem, 1.8vw, 0.925rem);
+}
+
+.reserveBtn {
+  margin-top: 0.5rem;
+  align-self: flex-start;
+}
+
 .imageBox {
   position: relative;
-  border-radius: 24px;
+  border-radius: clamp(16px, 3vw, 24px);
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 16 / 11;
 }
 
 .image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
   transition: transform 0.5s ease;
 }
 
 .imageBox:hover .image {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
 .overlayCard {
   position: absolute;
-  bottom: 2rem;
-  left: 2rem;
-  right: 2rem;
-  padding: 1.5rem;
+  bottom: clamp(0.75rem, 2.5vw, 2rem);
+  left: clamp(0.75rem, 2.5vw, 2rem);
+  right: clamp(0.75rem, 2.5vw, 2rem);
+  padding: clamp(0.85rem, 2vw, 1.5rem);
   border-radius: 16px;
   display: flex;
   flex-direction: column;
 }
 
 .overlayCard strong {
-  font-size: 1.25rem;
+  font-size: clamp(1.05rem, 2.5vw, 1.25rem);
   color: var(--primary-color);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
 }
 
 .overlayCard span {
   color: var(--text-dark);
   font-weight: 500;
+  font-size: clamp(0.825rem, 2vw, 0.95rem);
 }
 
 @media (max-width: 992px) {
   .content {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
   .imageBox {
     order: -1;
+    max-height: 420px;
+  }
+}
+
+@media (max-width: 640px) {
+  .reserveBtn {
+    align-self: stretch;
+    width: 100%;
+    text-align: center;
   }
 }

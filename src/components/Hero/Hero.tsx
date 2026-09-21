@@ -24,15 +24,15 @@ export default function Hero() {
 
           <div className={styles.ctaGroup}>
             <a
-              href="https://wa.me/5516997168587"
+              href="https://wa.me/5516997168587?text=Olá!%20Gostaria%20de%20reservar%20uma%20quadra%20ou%20saber%20mais%20sobre%20as%20aulas%20no%20CTBT."
               className="btn-primary"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               Reservar Quadra
             </a>
-            <a href="#bar" className={styles.btnOutline}>
-              Conhecer o Bar
+            <a href="#planos" className={styles.btnOutline}>
+              Ver Modalidades & Aulas
             </a>
           </div>
 

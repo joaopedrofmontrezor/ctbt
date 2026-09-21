@@ -1,11 +1,11 @@
 .teachersSection {
-  padding: 6rem 0;
+  padding: clamp(3.5rem, 7vw, 6rem) 0;
   background-color: var(--light-bg);
 }
 
 .header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: clamp(2rem, 5vw, 4rem);
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -17,98 +17,65 @@
   font-weight: 700;
   color: var(--primary-color);
   letter-spacing: 1px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: clamp(1.85rem, 4.5vw, 2.5rem);
   color: var(--text-dark);
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
 }
 
 .subtitle {
   color: #64748b;
-  font-size: 1.125rem;
+  font-size: clamp(0.95rem, 2vw, 1.125rem);
   line-height: 1.6;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-.testimonials {
-  margin-top: 4rem;
-}
-
-.headerSmall {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.titleSmall {
-  font-size: 2rem;
-  color: var(--text-dark);
-  margin-top: 0.5rem;
-}
-
-.reviewGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-.reviewCard {
-  background: white;
-  padding: 1.75rem;
-  border-radius: 18px;
-  border: 1px solid rgba(15, 23, 42, 0.06);
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
-}
-
-.reviewCard p {
-  color: var(--text-dark);
-  line-height: 1.7;
-  margin-bottom: 1rem;
-}
-
-.reviewCard footer {
-  color: var(--primary-color);
-  font-weight: 700;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.25rem, 3vw, 2rem);
 }
 
 .card {
   background: white;
-  padding: 2.5rem 2rem;
+  padding: clamp(1.5rem, 3.5vw, 2.5rem) clamp(1.25rem, 2.5vw, 2rem);
   border-radius: 24px;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
-  transition: transform 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border: 1px solid rgba(15, 23, 42, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
 .avatar {
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
   background: rgba(249, 115, 22, 0.1);
-  width: 100px;
-  height: 100px;
+  width: clamp(72px, 12vw, 96px);
+  height: clamp(72px, 12vw, 96px);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  margin: 0 auto 1.5rem;
+  margin: 0 auto clamp(1rem, 2vw, 1.5rem);
+  flex-shrink: 0;
 }
 
 .name {
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
   color: var(--text-dark);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .role {
@@ -116,22 +83,77 @@
   font-size: 0.875rem;
   color: var(--primary-color);
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .desc {
   color: #64748b;
   line-height: 1.6;
+  font-size: clamp(0.875rem, 1.8vw, 0.95rem);
+}
+
+.testimonials {
+  margin-top: clamp(3rem, 6vw, 5rem);
+}
+
+.headerSmall {
+  text-align: center;
+  margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.titleSmall {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  color: var(--text-dark);
+  margin-top: 0.5rem;
+  line-height: 1.25;
+}
+
+.reviewGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.reviewCard {
+  background: white;
+  padding: clamp(1.25rem, 2.5vw, 1.75rem);
+  border-radius: 18px;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.reviewCard p {
+  color: var(--text-dark);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+  font-size: clamp(0.9rem, 2vw, 0.975rem);
+}
+
+.reviewCard footer {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 0.875rem;
 }
 
 @media (max-width: 992px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .reviewGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .reviewGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
