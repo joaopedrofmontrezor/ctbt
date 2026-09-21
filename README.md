@@ -161,7 +161,7 @@ Acesse [http://localhost:3000](http://localhost:3000) no seu navegador.
 Projeto concebido, desenvolvido e entregue por:
 
 **João Pedro Montrezor**  
-*Desenvolvedor Full Stack / Engenheiro de Software*
+
 
 - **GitHub:** [@joaopedrofmontrezor](https://github.com/joaopedrofmontrezor)
 - **Repositório:** [github.com/joaopedrofmontrezor/ctbt](https://github.com/joaopedrofmontrezor/ctbt)
