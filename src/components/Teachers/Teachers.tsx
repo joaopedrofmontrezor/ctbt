@@ -1,24 +1,25 @@
 import styles from "./Teachers.module.css";
+import Image from "next/image";
 
 export default function Teachers() {
   const teachers = [
     {
       name: "Hugo Rossato",
       description:
-        "Especialista em táticas avançadas e torneios profissionais de Beach Tennis.",
-      emoji: "👨🏽‍🏫",
+        "Especialista em táticas avançadas",
+      image: "images/hugo.png",
     },
     {
       name: "Eduardo Mortari",
       description:
         "Foco no desenvolvimento técnico e fundamentos essenciais do esporte.",
-      emoji: "👨🏽‍🏫",
+      image: "images/eduardo.png",
     },
     {
       name: "Arthur Tercini",
       description:
         "Didática excelente para quem está dando os primeiros passos na areia.",
-      emoji: "👨🏻‍🏫",
+      image: "images/arthur.png",
     },
   ];
 
@@ -55,8 +56,11 @@ export default function Teachers() {
         <div className={styles.grid}>
           {teachers.map((teacher, index) => (
             <div key={index} className={styles.card}>
-              <div className={styles.avatar}>{teacher.emoji}</div>
+              <div className={styles.avatar}>
+                <img src={teacher.image} alt={teacher.name} />
+              </div>
               <h3 className={styles.name}>{teacher.name}</h3>
+              <span className={styles.role}>Professor</span>
               <p className={styles.desc}>{teacher.description}</p>
             </div>
           ))}

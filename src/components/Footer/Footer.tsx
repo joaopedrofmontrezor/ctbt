@@ -17,7 +17,7 @@ export default function Footer() {
               />
               <div>
                 <span className={styles.logoTitle}>CTBT</span>
-                <span className={styles.logoSubtitle}>Beach Tennis</span>
+                {/* <span className={styles.logoSubtitle}></span> */}
               </div>
             </div>
             <p className={styles.desc}>
@@ -42,10 +42,10 @@ export default function Footer() {
                 <a href="#professores">Nossos Professores</a>
               </li>
               <li>
-                <a href="#depoimentos">Depoimentos</a>
+                <a href="#bar">Bar & Gastronomia</a>
               </li>
               <li>
-                <a href="#bar">Bar & Gastronomia</a>
+                <a href="#depoimentos">Depoimentos</a>
               </li>
               <li>
                 <a href="#localizacao">Localização</a>

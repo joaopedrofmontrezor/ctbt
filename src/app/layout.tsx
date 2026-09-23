@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     siteName: "CTBT",
-    url: "https://ctbt.com.br",
+    url: "https://ctbt-six.vercel.app",
   },
   twitter: {
     card: "summary_large_image",

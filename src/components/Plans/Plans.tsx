@@ -11,11 +11,10 @@ export default function Plans() {
         "Iluminação LED noturna inclusa",
         "Estrutura de vestiários e duchas",
         "Acesso livre ao Bar & Gastronomia",
-        "Opção de aluguel de raquetes no local",
       ],
       ctaText: "Reservar Horário",
       whatsappMsg:
-        "Olá! Gostaria de consultar horários disponíveis e valores para locação avulsa de quadra no CTBT.",
+        "Olá! Gostaria de consultar horários disponíveis e valores para locação avulsa de quadras no CTBT.",
       popular: false,
     },
     {
@@ -25,13 +24,13 @@ export default function Plans() {
       features: [
         "Aulas para iniciantes ao avançado",
         "Professores especializados e experientes",
-        "Turmas reduzidas ou aula individual/VIP",
+        "Turmas ou aulas individuais",
         "Metodologia focada em fundamentos e tática",
         "Aula experimental sem compromisso",
       ],
       ctaText: "Agendar Aula Experimental",
       whatsappMsg:
-        "Olá! Gostaria de agendar uma aula experimental de Beach Tennis no CTBT.",
+        "Olá! Gostaria de agendar uma aula experimental no CTBT.",
       popular: true,
     },
     {
@@ -40,14 +39,12 @@ export default function Plans() {
       badge: "Exclusivo",
       features: [
         "Dia e horário fixos na semana",
-        "Prioridade em inscrições de torneios",
         "Condições especiais em eventos do clube",
-        "Descontos exclusivos no bar e pro-shop",
         "Comunidade ativa para marcar jogos",
       ],
       ctaText: "Consultar Vagas Mensalistas",
       whatsappMsg:
-        "Olá! Gostaria de saber mais sobre as vagas e planos para Mensalista no CTBT.",
+        "Olá! Gostaria de saber mais sobre as vagas e planos do CTBT.",
       popular: false,
     },
     {
@@ -56,7 +53,7 @@ export default function Plans() {
       badge: "Personalizado",
       features: [
         "Quadras exclusivas para o seu grupo",
-        "Cardápio especial de porções e chopp",
+        "Cardápio especial",
         "Suporte para organização de mini-torneio",
         "Ambiente descontraído e seguro",
         "Estrutura completa com som e atendimento",

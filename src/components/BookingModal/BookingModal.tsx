@@ -63,8 +63,8 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
             Personalize seu Horário
           </h3>
           <p className={styles.subtitle}>
-            Escolha o que você procura e nossa recepção já vai te atender com os
-            melhores horários disponíveis.
+            Escolha o que você procura e nossa recepção já vai te atender com as
+            melhores informações disponíveis.
           </p>
         </div>
 
@@ -74,7 +74,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
             {[
               "Locação de Quadra",
               "Aula Experimental",
-              "Plano Mensalista",
+              "Planos",
               "Evento ou Aniversário",
             ].map((item) => (
               <button
@@ -96,7 +96,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
           <div className={styles.optionsGrid}>
             {[
               "Manhã (07h às 12h)",
-              "Tarde (12h às 18h)",
+              "Tarde (14h às 18h)",
               "Noite (18h às 22h)",
               "Fim de Semana",
             ].map((item) => (

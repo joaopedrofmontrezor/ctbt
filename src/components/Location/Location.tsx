@@ -20,7 +20,7 @@ export default function Location() {
     },
     {
       q: "O Bar & Gastronomia é aberto para quem não vai jogar?",
-      a: "Sim! Nosso Bar & Lounge é 100% aberto ao público de Matão e visitantes para curtir o fim de tarde, tomar chopp trincando, drinks especiais e provar nossas porções exclusivas.",
+      a: "Sim! Nosso Bar é 100% aberto ao público de Matão e visitantes para curtir o dia.",
     },
     {
       q: "Vocês realizam eventos, aniversários e confraternizações de empresas?",
@@ -80,7 +80,7 @@ export default function Location() {
                     <br />
                     Segunda a Sexta: 09h às 22h
                     <br />
-                    Sábados e Domingos: 07h às 19h
+                    Sábados e Domingos: 12h às 19h
                   </div>
                   <div>
                     <strong>🍹 Bar & Gastronomia:</strong>

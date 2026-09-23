@@ -6,11 +6,11 @@ export default function Gastronomy() {
     <section className={styles.barSection} id="bar">
       <div className="container">
         <div className={styles.header}>
-          <span className={styles.tag}>CTBT BAR</span>
+          <span className={styles.tag}>CTBT - BAR</span>
           <h2 className={styles.title}>Gastronomia & Bar</h2>
           <p className={styles.subtitle}>
             Após o treino ou para curtir o dia com estilo. Drinks refrescantes,
-            cerveja trincando e porções artesanais.
+            bebidas geladas e porções artesanais.
           </p>
         </div>
 
@@ -18,7 +18,7 @@ export default function Gastronomy() {
           <div className={styles.imageBox}>
             <Image
               src="/images/bar.png"
-              alt="Bar e Gastronomia CTBT Beach Tennis em Matão"
+              alt="Bar e Gastronomia CTBT em Matão"
               className={styles.image}
               width={800}
               height={550}
@@ -34,7 +34,7 @@ export default function Gastronomy() {
               <div className={styles.icon}>🍹</div>
               <h4>Drinks</h4>
               <p>
-                Coquetelaria artesanal com frutas selecionadas e caipirinhas
+                Coquetelaria artesanal com frutas selecionadas e bebidas
                 exclusivas.
               </p>
             </div>

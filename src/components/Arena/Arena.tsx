@@ -6,8 +6,8 @@ export default function Arena() {
     <section className={styles.arenaSection} id="arena">
       <div className="container">
         <div className={styles.header}>
-          <span className={styles.tag}>CTBT BEACH TENNIS</span>
-          <h2 className={styles.title}>A Arena & Esportes de Areia</h2>
+          <span className={styles.tag}>CTBT</span>
+          <h2 className={styles.title}>A Arena & Esporte de Areia</h2>
           <p className={styles.subtitle}>
             Evolua no esporte, jogue com amigos e sinta a energia da areia de
             alta qualidade com infraestrutura completa.
@@ -62,7 +62,7 @@ export default function Arena() {
           <div className={styles.imageBox}>
             <Image
               src="/images/arena.png"
-              alt="Arena CTBT Beach Tennis em Matão"
+              alt="Arena CTBT em Matão"
               className={styles.image}
               width={800}
               height={550}
